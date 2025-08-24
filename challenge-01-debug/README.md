@@ -76,12 +76,12 @@ Existem **6 bugs** reais neste código:
 
 | Bug | Tipo              | Área             | Hint                            |
 | --- | ----------------- | ---------------- | ------------------------------- |
-| 🔴  | **TypeScript**    | Estado inicial   | Algo faltando na declaração     |
-| 🟠  | **Infinite Loop** | useEffect        | Dependências problemáticas      |
-| 🟡  | **React Warning** | Renderização     | Propriedade obrigatória ausente |
-| 🔵  | **State Bug**     | Botão delete     | Mudança não refletida na tela   |
-| 🟣  | **Memory Leak**   | Event listener   | Recurso não limpo               |
-| 🟢  | **API Error**     | Resposta de erro | Número inadequado               |
+| 🔴 OK | **TypeScript**    | Estado inicial   | Algo faltando na declaração     |
+| 🟠 OK | **Infinite Loop** | useEffect        | Dependências problemáticas      |
+| 🟡 OK | **React Warning** | Renderização     | Propriedade obrigatória ausente |
+| 🔵 OK | **State Bug**     | Botão delete     | Mudança não refletida na tela   |
+| 🟣 OK | **Memory Leak**   | Event listener   | Recurso não limpo               |
+| 🟢 OK | **API Error**     | Resposta de erro | Número inadequado               |
 
 ## 🎥 Sugestões para o vídeo:
 

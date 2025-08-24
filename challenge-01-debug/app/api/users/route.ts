@@ -54,9 +54,6 @@ export async function GET(request: NextRequest) {
 	const department = searchParams.get('department')
 
 	try {
-		if (Math.random() < 0.15) {
-			return NextResponse.json({ error: 'Internal server error', users: [] }, { status: 200 })
-		}
 
 		let filteredUsers = mockUsers
 
@@ -74,10 +71,11 @@ export async function GET(request: NextRequest) {
 			users: usersWithRandomStatus,
 			total: usersWithRandomStatus.length,
 			timestamp: new Date().toISOString(),
-		})
+		}, { status: 200})
 	} catch (error) {
 		console.log('Some error happened')
-		return NextResponse.json({ error: 'Something went wrong' }, { status: 200 })
+			
+		return NextResponse.json({ error: 'Something went wrong' }, { status: 500 })
 	}
 }
 
